@@ -1,3 +1,3 @@
 # changelocation
 
-To use, run python3 changelocation.py
+To use, run ```python3 changelocation.py```
