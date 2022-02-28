@@ -31,6 +31,9 @@ print("by " +bcolors.BOLD + "Ethan Goodhart" + bcolors.ENDC + "\n")
 networkFlag = ""
 udid = subprocess.getoutput("idevice_id --list")
 
+if "command not found" in udid:
+    sys.exit("Dependencies not installed!")
+
 if udid == "":
     netudid = subprocess.getoutput("idevice_id -n --list")
     
