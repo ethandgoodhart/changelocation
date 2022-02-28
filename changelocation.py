@@ -16,7 +16,7 @@ class bcolors:
 try:
     import requests
 except ModuleNotFoundError:
-    os.system("pip{}.{} install requests".format(sys.version.split('.')[0], sys.version.split('.')[1]))
+    os.system("pip3 install requests")
 
 idevicesetlocation_installed = subprocess.getoutput("idevicesetlocation --help").split("\n")[0] == 'Usage: idevicesetlocation [OPTIONS] -- <LAT> <LONG>'
 
